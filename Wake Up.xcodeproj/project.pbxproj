@@ -14,6 +14,8 @@
 		510EAC1520207425006C4098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510EAC1320207425006C4098 /* LaunchScreen.storyboard */; };
 		510EAC2020207425006C4098 /* Wake_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EAC1F20207425006C4098 /* Wake_UpTests.swift */; };
 		510EAC2B20207425006C4098 /* Wake_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EAC2A20207425006C4098 /* Wake_UpUITests.swift */; };
+		510EAC39202075C6006C4098 /* Wake Up.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 510EAC38202075C6006C4098 /* Wake Up.m4a */; };
+		51AABEB92020931F008F4B0B /* wake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 51AABEB82020931F008F4B0B /* wake.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		510EAC2620207425006C4098 /* Wake UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wake UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		510EAC2A20207425006C4098 /* Wake_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wake_UpUITests.swift; sourceTree = "<group>"; };
 		510EAC2C20207425006C4098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510EAC38202075C6006C4098 /* Wake Up.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wake Up.m4a"; sourceTree = "<group>"; };
+		51AABEB82020931F008F4B0B /* wake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wake.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		510EAC0920207424006C4098 /* Wake Up */ = {
 			isa = PBXGroup;
 			children = (
+				510EAC38202075C6006C4098 /* Wake Up.m4a */,
+				51AABEB82020931F008F4B0B /* wake.mp3 */,
 				510EAC0A20207424006C4098 /* AppDelegate.swift */,
 				510EAC0C20207424006C4098 /* ViewController.swift */,
 				510EAC0E20207424006C4098 /* Main.storyboard */,
@@ -234,8 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510EAC39202075C6006C4098 /* Wake Up.m4a in Resources */,
 				510EAC1520207425006C4098 /* LaunchScreen.storyboard in Resources */,
 				510EAC1220207425006C4098 /* Assets.xcassets in Resources */,
+				51AABEB92020931F008F4B0B /* wake.mp3 in Resources */,
 				510EAC1020207424006C4098 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
