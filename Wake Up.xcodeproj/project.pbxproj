@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		493041DB2020CCC3004F5039 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493041DA2020CCC3004F5039 /* AlarmTableViewCell.swift */; };
 		493041DD2020CD07004F5039 /* AlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493041DC2020CD07004F5039 /* AlarmTableViewController.swift */; };
-		493041E02020CDCB004F5039 /* AlarmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493041DE2020CDCB004F5039 /* AlarmDetailViewController.swift */; };
-		493041E12020CDCB004F5039 /* AlarmDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493041DF2020CDCB004F5039 /* AlarmDetailViewController.xib */; };
+		493041E02020CDCB004F5039 /* CreateNewAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493041DE2020CDCB004F5039 /* CreateNewAlarmViewController.swift */; };
+		493041E12020CDCB004F5039 /* CreateNewAlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493041DF2020CDCB004F5039 /* CreateNewAlarmViewController.xib */; };
 		510EAC0B20207424006C4098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EAC0A20207424006C4098 /* AppDelegate.swift */; };
 		510EAC1020207424006C4098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510EAC0E20207424006C4098 /* Main.storyboard */; };
 		510EAC1220207425006C4098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510EAC1120207425006C4098 /* Assets.xcassets */; };
@@ -18,6 +18,10 @@
 		510EAC2020207425006C4098 /* Wake_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EAC1F20207425006C4098 /* Wake_UpTests.swift */; };
 		510EAC2B20207425006C4098 /* Wake_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510EAC2A20207425006C4098 /* Wake_UpUITests.swift */; };
 		510EAC39202075C6006C4098 /* Wake Up.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 510EAC38202075C6006C4098 /* Wake Up.m4a */; };
+		5151FA502020DAA600814DD7 /* WakeUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5151FA4F2020DAA600814DD7 /* WakeUpController.swift */; };
+		5151FA522020DACD00814DD7 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5151FA512020DACD00814DD7 /* Alarm.swift */; };
+		5151FA542020E1A600814DD7 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5151FA532020E1A500814DD7 /* silence.mp3 */; };
+		5151FA5620213AF700814DD7 /* Wake Up Fredrock.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5151FA5520213AF700814DD7 /* Wake Up Fredrock.m4a */; };
 		51AABEB92020931F008F4B0B /* wake.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 51AABEB82020931F008F4B0B /* wake.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +45,8 @@
 /* Begin PBXFileReference section */
 		493041DA2020CCC3004F5039 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		493041DC2020CD07004F5039 /* AlarmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewController.swift; sourceTree = "<group>"; };
-		493041DE2020CDCB004F5039 /* AlarmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailViewController.swift; sourceTree = "<group>"; };
-		493041DF2020CDCB004F5039 /* AlarmDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmDetailViewController.xib; sourceTree = "<group>"; };
+		493041DE2020CDCB004F5039 /* CreateNewAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAlarmViewController.swift; sourceTree = "<group>"; };
+		493041DF2020CDCB004F5039 /* CreateNewAlarmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewAlarmViewController.xib; sourceTree = "<group>"; };
 		510EAC0720207424006C4098 /* Wake Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wake Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		510EAC0A20207424006C4098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		510EAC0F20207424006C4098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,6 +60,10 @@
 		510EAC2A20207425006C4098 /* Wake_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wake_UpUITests.swift; sourceTree = "<group>"; };
 		510EAC2C20207425006C4098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510EAC38202075C6006C4098 /* Wake Up.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wake Up.m4a"; sourceTree = "<group>"; };
+		5151FA4F2020DAA600814DD7 /* WakeUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpController.swift; sourceTree = "<group>"; };
+		5151FA512020DACD00814DD7 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		5151FA532020E1A500814DD7 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		5151FA5520213AF700814DD7 /* Wake Up Fredrock.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wake Up Fredrock.m4a"; sourceTree = "<group>"; };
 		51AABEB82020931F008F4B0B /* wake.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wake.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,17 +115,21 @@
 		510EAC0920207424006C4098 /* Wake Up */ = {
 			isa = PBXGroup;
 			children = (
+				5151FA5520213AF700814DD7 /* Wake Up Fredrock.m4a */,
 				510EAC38202075C6006C4098 /* Wake Up.m4a */,
 				51AABEB82020931F008F4B0B /* wake.mp3 */,
+				5151FA532020E1A500814DD7 /* silence.mp3 */,
 				510EAC0A20207424006C4098 /* AppDelegate.swift */,
-				493041DC2020CD07004F5039 /* AlarmTableViewController.swift */,
+				5151FA4F2020DAA600814DD7 /* WakeUpController.swift */,
+				5151FA512020DACD00814DD7 /* Alarm.swift */,
 				510EAC0E20207424006C4098 /* Main.storyboard */,
-				493041DE2020CDCB004F5039 /* AlarmDetailViewController.swift */,
-				493041DF2020CDCB004F5039 /* AlarmDetailViewController.xib */,
+				493041DC2020CD07004F5039 /* AlarmTableViewController.swift */,
+				493041DA2020CCC3004F5039 /* AlarmTableViewCell.swift */,
+				493041DE2020CDCB004F5039 /* CreateNewAlarmViewController.swift */,
+				493041DF2020CDCB004F5039 /* CreateNewAlarmViewController.xib */,
 				510EAC1120207425006C4098 /* Assets.xcassets */,
 				510EAC1320207425006C4098 /* LaunchScreen.storyboard */,
 				510EAC1620207425006C4098 /* Info.plist */,
-				493041DA2020CCC3004F5039 /* AlarmTableViewCell.swift */,
 			);
 			path = "Wake Up";
 			sourceTree = "<group>";
@@ -250,10 +262,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				510EAC39202075C6006C4098 /* Wake Up.m4a in Resources */,
-				493041E12020CDCB004F5039 /* AlarmDetailViewController.xib in Resources */,
+				5151FA5620213AF700814DD7 /* Wake Up Fredrock.m4a in Resources */,
+				493041E12020CDCB004F5039 /* CreateNewAlarmViewController.xib in Resources */,
 				510EAC1520207425006C4098 /* LaunchScreen.storyboard in Resources */,
 				510EAC1220207425006C4098 /* Assets.xcassets in Resources */,
 				51AABEB92020931F008F4B0B /* wake.mp3 in Resources */,
+				5151FA542020E1A600814DD7 /* silence.mp3 in Resources */,
 				510EAC1020207424006C4098 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				493041DD2020CD07004F5039 /* AlarmTableViewController.swift in Sources */,
-				493041E02020CDCB004F5039 /* AlarmDetailViewController.swift in Sources */,
+				5151FA502020DAA600814DD7 /* WakeUpController.swift in Sources */,
+				493041E02020CDCB004F5039 /* CreateNewAlarmViewController.swift in Sources */,
 				510EAC0B20207424006C4098 /* AppDelegate.swift in Sources */,
 				493041DB2020CCC3004F5039 /* AlarmTableViewCell.swift in Sources */,
+				5151FA522020DACD00814DD7 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

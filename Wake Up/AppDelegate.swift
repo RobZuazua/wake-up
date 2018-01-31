@@ -7,18 +7,29 @@
 //
 
 import UIKit
-import AVFoundation
-import MediaPlayer
 import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-    var audioPlayer: AVAudioPlayer?
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        UINavigationBar.appearance().tintColor = UIColor.wakeupTintColor
+        UINavigationBar.appearance().barStyle = .black
+        UINavigationBar.appearance().isTranslucent = true
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
+        if #available(iOS 11.0, *) {
+            UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        }
+
+        UITabBar.appearance().barStyle = .black
+        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().tintColor = UIColor.wakeupTintColor
+                
         return true
     }
     
@@ -28,53 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        playSilence()
-        Timer.scheduledTimer(withTimeInterval: 55, repeats: false) { (_) in
-            self.playAlarm()
-        }
-    }
-    
-    func playAlarm() {
-        
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .duckOthers)
-            print("Playback OK")
-            try AVAudioSession.sharedInstance().setActive(true)
-            print("Session is Active")
-            
-            let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "Wake Up", ofType: "m4a")!)
-            print(alertSound)
-            
-            self.audioPlayer = try AVAudioPlayer(contentsOf: alertSound)
-        } catch {
-            print(error)
-        }
-        
-        (MPVolumeView().subviews.filter{NSStringFromClass($0.classForCoder) == "MPVolumeSlider"}.first as? UISlider)?.setValue(1, animated: false)
-        self.audioPlayer!.prepareToPlay()
-        self.audioPlayer!.play()
-    }
-    
-    func playSilence() {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .duckOthers)
-            print("Playback OK")
-            try AVAudioSession.sharedInstance().setActive(true)
-            print("Session is Active")
-            
-            let alertSound = URL(fileURLWithPath: Bundle.main.path(forResource: "wake", ofType: "mp3")!)
-            print(alertSound)
-            
-            self.audioPlayer = try AVAudioPlayer(contentsOf: alertSound)
-        } catch {
-            print(error)
-        }
-        
-        (MPVolumeView().subviews.filter{NSStringFromClass($0.classForCoder) == "MPVolumeSlider"}.first as? UISlider)?.setValue(1, animated: false)
-        self.audioPlayer!.numberOfLoops = -1
-        self.audioPlayer!.volume = 0.1
-        self.audioPlayer!.prepareToPlay()
-        self.audioPlayer!.play()
+        WakeUpController.sharedController.startTimers()
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -90,3 +55,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
+extension UIColor {
+    static let wakeupTintColor = UIColor.init(red: 206.0/255.0, green: 45.0/255.0, blue: 100.0/255.0, alpha: 1.0)
+}

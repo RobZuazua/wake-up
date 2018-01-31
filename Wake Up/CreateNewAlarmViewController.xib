@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14087.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14075.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateNewAlarmViewController" customModule="Wake_Up" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="745-az-RbZ" id="ax6-bO-GQc"/>
+                <outlet property="tableView" destination="tWP-wA-xlX" id="wFJ-LF-xw1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="745-az-RbZ">
+                    <rect key="frame" x="0.0" y="20" width="375" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="etx-aZ-ekt"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="539021511.26243603">
+                        <!--2018-01-30 16:11:51 +0000-->
+                    </date>
+                </datePicker>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tWP-wA-xlX">
+                    <rect key="frame" x="0.0" y="190" width="375" height="477"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="erp-VF-VZz"/>
+                        <outlet property="delegate" destination="-1" id="P45-Kv-TzY"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="745-az-RbZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9gL-v9-Xpz"/>
+                <constraint firstItem="745-az-RbZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GDl-4H-Tfh"/>
+                <constraint firstItem="tWP-wA-xlX" firstAttribute="top" secondItem="745-az-RbZ" secondAttribute="bottom" constant="8" symbolic="YES" id="HRO-vE-8yd"/>
+                <constraint firstAttribute="trailing" secondItem="745-az-RbZ" secondAttribute="trailing" id="Iv2-Im-hwc"/>
+                <constraint firstItem="745-az-RbZ" firstAttribute="leading" secondItem="tWP-wA-xlX" secondAttribute="leading" id="eHG-6f-G17"/>
+                <constraint firstItem="745-az-RbZ" firstAttribute="trailing" secondItem="tWP-wA-xlX" secondAttribute="trailing" id="nCd-AQ-Fgt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

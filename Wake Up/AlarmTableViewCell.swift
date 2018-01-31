@@ -10,8 +10,13 @@ import UIKit
 
 class AlarmTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var alarmDescriptionLabel: UILabel!
+    @IBOutlet weak var alarmSwitch: UISwitch!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        alarmSwitch.onTintColor = UIColor.wakeupTintColor
         // Initialization code
     }
 
